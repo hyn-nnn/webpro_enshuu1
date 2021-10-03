@@ -4,8 +4,8 @@ let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
-  if(mySrc === 'images/firefox-icon.png') {
-    myImage.setAttribute ('src','images/.png');
+  if(mySrc === 'images/aikon.png') {
+    myImage.setAttribute ('src','images/aikon.png');
   } else {
     myImage.setAttribute ('src','images/aikon.png');
   }
@@ -30,7 +30,7 @@ if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
+  myHeading.innerHTML = storedName + 'さん、こんにちは！';
 }
 
 myButton.onclick = function() {
